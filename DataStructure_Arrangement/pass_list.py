@@ -1,0 +1,18 @@
+# 리스트의 모든 원솟값을 업데이트하기
+# 인수가 뮤터블하면 함수 안에서 업데이트한 값이 원래 호출한 곳으로 전달된다.
+
+def change(lst, idx, val):
+    """
+    lst[idx]의 값을 val 로 업데이트
+    """
+    lst[idx] = val
+
+
+x = [11, 22, 33, 44, 55]
+print('x =', x)
+
+index = int(input('업데이트할 인덱스를 선택하세요.: '))
+value = int(input('새로운 값을 입력하세요.: '))
+
+change(x, index, value)
+print(f'x = {x}')
